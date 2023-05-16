@@ -13,7 +13,7 @@ const HomeScreen = () => {
     
       const fetchImageData = async () => {
         try {
-          const response = await axios.get(' https://testing1-1-f9743958.deta.app');
+          const response = await axios.get('http://127.0.0.1:8000 ');
           setImages(response.data);
           console.log(response.data)
         } catch (error) {
