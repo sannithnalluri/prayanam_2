@@ -1,0 +1,114 @@
+*{
+    padding:0;
+    margin:0;
+}
+.webname{
+background-color: rgb(0, 162, 255);
+width: 100;
+height:20;
+padding: 100;
+display:flex;
+flex-direction:row;
+
+}
+.webname h1,h3{
+    color:white;
+}
+.header{
+    margin-left:100px;
+}
+.Nav-main ul{
+    list-style:none;
+    color:white;
+    display: flex;
+    align-content: space-around;
+    padding:20px;
+    margin-left:120px;
+    
+}
+.Nav-main ul li{
+    padding-left:30px;
+    padding-right:30px;
+    font-size:25px;
+    font-weight:bold;
+    transition: all;
+    transition-delay:0.2s;
+     transition: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+.Nav-main ul li:hover{
+    color:orange;
+
+}
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 8%;
+  }
+  
+  .place-card {
+    width: 28%; /* Adjust the width as needed */
+    height: 500px;
+    margin-bottom: 20px; /* Adjust the margin as needed */
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+
+      
+  }
+  
+  .place-card img {
+    width: 95%;
+    height: auto;
+    transition:ease-out;
+    transition-duration: 0.3s;
+    border-radius:20px;
+  }
+  .place-card img:hover{
+    width: 100%;
+  }
+  
+  .place-info {
+    margin-top: 10px;
+  }
+  main h1{
+    margin-left:46%;
+    margin-bottom: 20px;
+  }
+.home-header{
+    width: 100%;
+    height: 600px;
+    background-image:url('../componet/golconda.jpg');
+    background-size: cover;
+    background-position: top;
+}
+.home-header h2{
+    color: rgb(245, 235, 235);
+    text-align: center;
+    padding-top:20%;
+}
+.hidden_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 230px;
+    height: 80px;
+    background-color: transparent;
+    border: 2px solid #ccc;
+   
+  }
+  
+  .hidden_btn h3 {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+
+    text-decoration: none;
+  }
