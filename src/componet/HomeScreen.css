@@ -11,7 +11,7 @@ display:flex;
 flex-direction:row;
 
 }
-.webname h1,h3{
+.webname h1{
     color:white;
 }
 .header{

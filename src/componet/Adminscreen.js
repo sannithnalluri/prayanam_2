@@ -38,7 +38,6 @@ const AdminScreen = () => {
     axios.post('https://testing1-1-f9743958.deta.app/postplaces', placeData)
       .then(response => {
         console.log(response.data);
-        // handle success
         setlog(response.data.status)
       })
       .catch(error => {

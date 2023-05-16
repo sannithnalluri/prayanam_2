@@ -27,7 +27,8 @@ const HomeScreen = () => {
             <div className='webname'>
                 <div className='header'>
                 <h1>PRAYANAM </h1>
-                <h3>Travel with us</h3>
+                <div></div>
+                <h3 style={{color:'white'}}>Travel with us</h3>
                 </div>
                 <div className='Nav-main'>
                 <ul>
