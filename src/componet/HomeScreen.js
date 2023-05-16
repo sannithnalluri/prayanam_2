@@ -1,6 +1,7 @@
 import React from 'react';
 import './HomeScreen.css';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 
 import { useState,useEffect } from 'react';
@@ -13,7 +14,7 @@ const HomeScreen = () => {
     
       const fetchImageData = async () => {
         try {
-          const response = await axios.get('http://127.0.0.1:8000 ');
+          const response = await axios.get(' https://testing1-1-f9743958.deta.app');
           setImages(response.data);
           console.log(response.data)
         } catch (error) {
@@ -30,10 +31,10 @@ const HomeScreen = () => {
                 </div>
                 <div className='Nav-main'>
                 <ul>
-                    <li>Home</li>
-                    <li>Explore</li>
-                    <li>weather</li>
-                    <li>Contact</li>
+                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='/'>Explore</Link></li>
+                    <li><Link to='/'>Weather</Link></li>
+                    <li><Link to='/login'>Login</Link></li>
 
                 </ul>
                 </div>
