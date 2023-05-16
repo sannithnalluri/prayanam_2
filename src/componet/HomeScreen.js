@@ -1,6 +1,6 @@
 import React from 'react';
 import './HomeScreen.css';
-import axios from 'axios';
+
 
 
 import { useState,useEffect } from 'react';
@@ -13,13 +13,19 @@ const HomeScreen = () => {
     
       const fetchImageData = async () => {
         try {
-          const response = await axios.get('http://127.0.0.1:8000/');
-          setImages(response.data);
-          console.log(response.data)
+          const response = await fetch(' https://testing1-1-f9743958.deta.app');
+          if (response.ok) {
+            const data = await response.json();
+            setImages(data);
+            console.log(data);
+          } else {
+            throw new Error('Request failed with status:', response.status);
+          }
         } catch (error) {
           console.error('Error fetching image data:', error);
         }
       };
+      
         
     return (
         <div >
