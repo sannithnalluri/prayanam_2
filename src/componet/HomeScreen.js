@@ -26,13 +26,11 @@ const HomeScreen = () => {
         <div >
             <div className='webname'>
                 <div className='header'>
-                <h1>PRAYANAM </h1>
-                <div></div>
-                <h3 style={{color:'white'}}>Travel with us</h3>
+               <img src={require('./logo.png')}/>
                 </div>
                 <div className='Nav-main'>
                 <ul>
-                    <li><Link to='/'>Home</Link></li>
+                    <li style={{color:'black'}}><Link to='/'>Home</Link></li>
                     <li><Link to='/'>Explore</Link></li>
                     <li><Link to='/'>Weather</Link></li>
                     <li><Link to='/login'>Login</Link></li>
@@ -42,9 +40,9 @@ const HomeScreen = () => {
            
             </div>
             <div className='home-header'>
-                <h2>WELCOME TO THE NEW WORLD,SEE THE UNSEEN PlACES</h2>
+                <h2 style={{color:'white'}}>WELCOME TO THE NEW WORLD,SEE THE UNSEEN PlACES</h2>
                <div className='hidden_btn'>
-               <a href='#hidden-places'><h3>See hidden places</h3></a></div> 
+               <a href='#hidden-places'><h3 style={{color:'white',textDecoration:''}}>See hidden places</h3></a></div> 
             </div>
          
             <main id="hidden-places">

@@ -5,32 +5,36 @@
     background-color: #F1F5F8;
   }
   
-  h1 {
+ .login-form h1 {
     color: #3355AA;
     font-size: 24px;
     margin-bottom: 20px;
   }
-  
-  form {
+  .login-text{
+    margin-left: 40%;
+  }
+ .login-form form {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
-  label {
+  .main{
+    background-color: #F1F5F8;
+  }
+ .login-form label {
     font-size: 18px;
     color: #3355AA;
     margin-bottom: 10px;
   }
   
-  input {
+  .login-form input {
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 4px;
     border: 1px solid #3355AA;
   }
   
-  button {
+ .login-form button {
     padding: 10px 20px;
     background-color: #FFA500;
     color: white;
@@ -40,7 +44,7 @@
     cursor: pointer;
   }
   
-  button:hover {
+ .login-form button:hover {
     background-color: #FF7F00;
   }
   .log h3{
@@ -48,5 +52,10 @@
    
   }
   .log{
-    width: fit-content;
-  }
+    width: 300px;
+    margin-left: 170px;
+}
+
+.submit-btn{
+  padding-left: 1%;
+}

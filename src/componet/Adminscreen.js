@@ -48,26 +48,27 @@ const AdminScreen = () => {
 
   return (
     <div>
-        <form onSubmit={handleSubmit} id="addPlaceForm">
+        <form onSubmit={handleSubmit} id="addPlaceForm" className='addplace'>
         <div>
         <div className='webname'>
                 <div className='header'>
-                <h1>PRAYANAM </h1>
-                <h3>Travel with us</h3>
+               <img src={require('./logo.png')}/>
                 </div>
                 <div className='Nav-main'>
                 <ul>
-                    <li><Link to='/'>Home</Link></li>
-                    <li><Link to='/explore'>Explore</Link></li>
-                    <li><Link to='/explore'>Weather</Link></li>
+                    <li style={{color:'black'}}><Link to='/'>Home</Link></li>
+                    <li><Link to='/'>Explore</Link></li>
+                    <li><Link to='/'>Weather</Link></li>
                     <li><Link to='/login'>Login</Link></li>
 
                 </ul>
                 </div>
            
             </div>
-            <h1>Welcome Admin </h1></div>
-      <div>
+            <h1 style={{color:'#3355AA'}} className='adminh1'>Welcome Admin </h1>
+            </div>
+            <div className='container'>
+            <div>
         <label htmlFor="place">Place:</label>
         <input
           type="text"
@@ -97,7 +98,9 @@ const AdminScreen = () => {
           required
         />
       </div>
-      <div>
+            </div>
+     
+      <div className='des'>
         <label htmlFor="description">Description:</label>
         <textarea
           id="description"
