@@ -26,7 +26,7 @@ const HomeScreen = () => {
         <div >
             <div className='webname'>
                 <div className='header'>
-               <img src={require('./logo.png')}/>
+               <img src={require('./logo.png')} alt='logo-img'/>
                 </div>
                 <div className='Nav-main'>
                 <ul>

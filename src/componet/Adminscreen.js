@@ -52,7 +52,7 @@ const AdminScreen = () => {
         <div>
         <div className='webname'>
                 <div className='header'>
-               <img src={require('./logo.png')}/>
+               <img src={require('./logo.png')} alt='Logoimg'/>
                 </div>
                 <div className='Nav-main'>
                 <ul>
