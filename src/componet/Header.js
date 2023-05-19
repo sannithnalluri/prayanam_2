@@ -14,7 +14,7 @@ const Header = () => {
                     <li style={{color:'black'}}><Link to='/'>Home</Link></li>
                     <li><Link to='/'>Explore</Link></li>
                     <li><Link to='/'>Weather</Link></li>
-                    <li><Link to='/loginScreen'>Login</Link></li>
+                    <li><Link to='/Userlogin'>Login</Link></li>
                     <div className='social-icon'>
                       <li><Link><img src={require('./twittericon.png')} alt='twittericon'/></Link></li>
                       <li><Link><img src={require('./instaicon.png')} alt='instaicon'/></Link></li>
