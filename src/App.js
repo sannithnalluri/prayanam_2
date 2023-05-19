@@ -6,6 +6,7 @@ import HomeScreen from './componet/HomeScreen.js';
 import CreateScreen from './componet/Adminscreens/CreateScreen.js'
 import './App.css'
 import UpdateScreen from './componet/Adminscreens/UpdateScreen.js';
+import DeleteScreen from './componet/Adminscreens/DeleteSreen.js';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = React.useState(false);
@@ -23,6 +24,8 @@ const App = () => {
       <Route path="/admin" element={isLoggedIn ? <AdminScreen /> : <Navigate to="/" />} />
       <Route  path="/createScreen" element={<CreateScreen/>}/>
       <Route  path="/updateScreen" element={<UpdateScreen/>}/>
+      <Route  path="/DeleteScreen" element={<DeleteScreen/>}/>
+    
       
     </Routes>
   </Router>

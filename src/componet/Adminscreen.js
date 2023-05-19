@@ -24,7 +24,7 @@ const AdminScreen = () => {
           <button><Link to='/updateScreen'>update info</Link></button>
         </div>
         <div className='btn'>
-          <button><Link to='/delete'>
+          <button><Link to='/DeleteScreen'>
           Delete info</Link></button>
         </div> 
           </div>
