@@ -22,7 +22,7 @@ const CreateAccountPage = ({onLoginSuccess,history}) => {
       password: password
     };
 
-    axios.post('http://127.0.0.1:8000/usersignup', accountData)
+    axios.post('https://testing1-1-f9743958.deta.app/usersignup', accountData)
       .then(response => {
         console.log(response.data);
         navigate(`/UserDetails/${email}`);

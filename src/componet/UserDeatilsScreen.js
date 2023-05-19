@@ -9,7 +9,7 @@ const UserDetailPage = () => {
   const [user, setUser] = useState(null);
   const  userEmail  = useParams();
   useEffect(() => {
-    axios.get(`http://127.0.0.1:8000/getuserdata/${userEmail}`)
+    axios.get(`https://testing1-1-f9743958.deta.app/getuserdata/${userEmail}`)
       .then(response => {
         setUser(response.data);
       })
