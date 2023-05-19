@@ -16,7 +16,7 @@ const UserDetailPage = () => {
       .catch(error => {
         console.log(error);
       });
-  }, []);
+  }, [userEmail]);
 
   if (!user) {
     return <div>Loading...</div>;
