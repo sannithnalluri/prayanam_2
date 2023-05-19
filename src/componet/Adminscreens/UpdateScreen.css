@@ -2,11 +2,12 @@
     align-self: center;
     align-items: center;
     padding-left: 40%;
-    padding-top: 7%;
+    padding-top: 1%;
+    height: 500px;
 }
 .update-btn{
     position: absolute;
-    top:70%
+    top:60%
 }
 .update-form h1{
     padding:20px;

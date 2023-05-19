@@ -24,7 +24,7 @@ const UpdateScreen = () => {
       }
     };
     return (
-        <div>
+        <div className='body'>
             <Header/>
             <div className='update-form'>       
 <h1>Update Information</h1>

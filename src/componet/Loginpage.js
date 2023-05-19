@@ -12,10 +12,8 @@ const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [log, setlog] = useState('');
 
-  const handleLogin=()=>{
-    onLoginSuccess()
-  }
- /* const handleLogin = async (e) => {
+ 
+  const handleLogin = async (e) => {
     e.preventDefault();
     
     try {
@@ -25,10 +23,10 @@ const [email, setEmail] = useState('');
       });
   
       console.log('Login successful:', response.data);
-      onLoginSuccess()
+      
       
       if(response.data.vaild === 1){
-        
+        onLoginSuccess()
        
       }
       setlog(response.data.status)
@@ -41,7 +39,7 @@ const [email, setEmail] = useState('');
     }
    
     }
-   */
+  
   
 
     return (
