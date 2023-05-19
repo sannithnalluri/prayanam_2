@@ -5,7 +5,7 @@ import Header from './Header';
 import Footer from './Footer';
 import './CreateAccount.css'
 
-const UserDetailPage = ({useremail}) => {
+const UserDetailPage = () => {
   const [user, setUser] = useState(null);
   const { userEmail } = useParams();
   useEffect(() => {
