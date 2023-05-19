@@ -3,7 +3,9 @@ import { BrowserRouter as Router, Route, Navigate,Routes } from 'react-router-do
 import LoginScreen from '../src/componet/Loginpage.js';
 import AdminScreen from '../src/componet/Adminscreen.js';
 import HomeScreen from './componet/HomeScreen.js';
+import CreateScreen from './componet/Adminscreens/CreateScreen.js'
 import './App.css'
+import UpdateScreen from './componet/Adminscreens/UpdateScreen.js';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = React.useState(false);
@@ -19,6 +21,8 @@ const App = () => {
       <Route  path="/" element={<HomeScreen/>}/>
       <Route path="/login" element={isLoggedIn ? <Navigate to="/admin" /> : <LoginScreen onLoginSuccess={handleLoginSuccess} />} />
       <Route path="/admin" element={isLoggedIn ? <AdminScreen /> : <Navigate to="/" />} />
+      <Route  path="/createScreen" element={<CreateScreen/>}/>
+      <Route  path="/updateScreen" element={<UpdateScreen/>}/>
       
     </Routes>
   </Router>

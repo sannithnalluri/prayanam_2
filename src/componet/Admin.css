@@ -61,8 +61,45 @@ form {
     margin-left:40%;
   }
 
+.admin-body{
+  width: 100%;
+  height: 80vh;
+  background-image:url('./charminar.jpg');
+  background-size: cover;
+  color: white;
+}
+.admin-btn{
+  margin-left: 30%;
+  display: flex;
+  margin-top: 2%;
 
+}
+.admin-btn button {
+  color: #45a049;
+  background-color:rgb(250, 250, 250);
+  font-size: 25PX;
+  padding: 10PX;
+  margin: 20PX;
+  border-radius: 10PX;
+}
+a{
+  text-decoration: none;
+  color: rgb(69, 13, 13);
+}
+.admin-body h1{
+  margin-left: 40%;
 
+}
+.admin-body h3{
+  margin-left: 42%;
+
+}
+.admin-body p{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  font-size: medium;
+}
 
   @media(max-width:400px) {
     textarea{

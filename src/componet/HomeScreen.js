@@ -4,7 +4,10 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 
+
 import { useState,useEffect } from 'react';
+import Footer from './Footer';
+import Header from './Header';
 const HomeScreen = () => {
 
     const [images, setImages] = useState([]);
@@ -24,21 +27,7 @@ const HomeScreen = () => {
         
     return (
         <div >
-            <div className='webname'>
-                <div className='header'>
-               <img src={require('./logo.png')} alt='logo-img'/>
-                </div>
-                <div className='Nav-main'>
-                <ul>
-                    <li style={{color:'black'}}><Link to='/'>Home</Link></li>
-                    <li><Link to='/'>Explore</Link></li>
-                    <li><Link to='/'>Weather</Link></li>
-                    <li><Link to='/login'>Login</Link></li>
-
-                </ul>
-                </div>
-           
-            </div>
+            <Header/>
             <div className='home-header'>
                 <h2 style={{color:'white'}}>WELCOME TO THE NEW WORLD,SEE THE UNSEEN PlACES</h2>
                <div className='hidden_btn'>
@@ -75,8 +64,10 @@ const HomeScreen = () => {
             </div>
           ))}
         </div>
+
             </main>
-            
+            <Footer/>
+             
         </div>
     );
 }

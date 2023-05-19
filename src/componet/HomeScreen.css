@@ -34,7 +34,7 @@ flex-direction:row;
 }
 .Nav-main ul li a{
   color:#6a3737;
-    padding-left:100px;
+    padding-left:50px;
     padding-right:30px;
     font-size:25px;
     font-weight:bold;
@@ -43,7 +43,7 @@ flex-direction:row;
      transition: cubic-bezier(0.6, 0.04, 0.98, 0.335);
      text-decoration: none;
 }
-.Nav-main ul li:hover{
+.Nav-main ul li a:hover{
     color:orange;
 
 }
@@ -112,7 +112,40 @@ flex-direction:row;
     border: 2px solid #ccc;
    
   }
-  
+  .social-icon img{
+    border-radius: 300px;
+    width: 40px;
+    height: 40px;
+  }
+  .social-icon{
+    display: flex;
+    margin-left: 20px;
+  }
+  .social-icon li{
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+ .footer-btn{
+  display: flex;
+  justify-content: space-around;
+  background-color:rgb(203, 208, 211);
+ color: #6a3737;
+  margin-top: 20px;
+
+ }
+ .footer-btn h3{
+color: #3e1414;
+  padding: 10px;
+ }
+ .footer-btn h3:hover{
+  color: #6a3737;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+ }
+ .footer-btn img{
+  width: 200px;
+  height: 200px;
+
+ }
   .hidden_btn h3 {
     color: #000000;
     font-size: 24px;

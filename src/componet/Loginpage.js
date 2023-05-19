@@ -4,6 +4,7 @@ import axios from 'axios';
 import './Loginpage.css';
 import './HomeScreen.css'
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
 const Loginpage = ({onLoginSuccess}) => {
 
     
@@ -11,20 +12,23 @@ const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [log, setlog] = useState('');
 
-
-  const handleLogin = async (e) => {
+  const handleLogin=()=>{
+    onLoginSuccess()
+  }
+ /* const handleLogin = async (e) => {
     e.preventDefault();
     
     try {
-      const response = await axios.post('https://testing1-1-f9743958.deta.app/login/', {
+     const response = await axios.post('https://testing1-1-f9743958.deta.app/login/', {
         email,
         password,
       });
   
       console.log('Login successful:', response.data);
+      onLoginSuccess()
       
       if(response.data.vaild === 1){
-        onLoginSuccess()
+        
        
       }
       setlog(response.data.status)
@@ -35,13 +39,14 @@ const [email, setEmail] = useState('');
       console.error('Error during login:', error);
       // Add your error handling logic here
     }
-    
+   
     }
-  
+   */
   
 
     return (
-        <div className="login-form">
+    <div>
+      <div className="login-form">
              <div className='webname'>
                 <div className='header'>
                <img src={require('./logo.png')} alt='logo-img'/>
@@ -90,7 +95,11 @@ const [email, setEmail] = useState('');
           </div>
          
         </form>
+        
       </div>
+      <Footer/>
+    </div>
+        
     );
 }
 

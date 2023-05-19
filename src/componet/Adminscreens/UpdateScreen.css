@@ -1,0 +1,16 @@
+.update-form{
+    align-self: center;
+    align-items: center;
+    padding-left: 40%;
+    padding-top: 7%;
+}
+.update-btn{
+    position: absolute;
+    top:70%
+}
+.update-form h1{
+    padding:20px;
+}
+.input{
+    padding: 2px;
+}

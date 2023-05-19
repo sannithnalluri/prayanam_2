@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './Admin.css'
 import { Link } from 'react-router-dom';
+import Header from './Header';
+import Footer from './Footer';
 const AdminScreen = () => {
   const [place, setPlace] = useState('');
   const [location, setLocation] = useState('');
@@ -48,71 +50,29 @@ const AdminScreen = () => {
 
   return (
     <div>
-        <form onSubmit={handleSubmit} id="addPlaceForm" className='addplace'>
-        <div>
-        <div className='webname'>
-                <div className='header'>
-               <img src={require('./logo.png')} alt='Logoimg'/>
-                </div>
-                <div className='Nav-main'>
-                <ul>
-                    <li style={{color:'black'}}><Link to='/'>Home</Link></li>
-                    <li><Link to='/'>Explore</Link></li>
-                    <li><Link to='/'>Weather</Link></li>
-                    <li><Link to='/login'>Login</Link></li>
-
-                </ul>
-                </div>
-           
-            </div>
-            <h1 style={{color:'#3355AA'}} className='adminh1'>Welcome Admin </h1>
-            </div>
-            <div className='container'>
-            <div>
-        <label htmlFor="place">Place:</label>
-        <input
-          type="text"
-          id="place"
-          value={place}
-          onChange={handlePlaceChange}
-          required
-        />
-      </div>
-      <div>
-        <label htmlFor="location">Location:</label>
-        <input
-          type="text"
-          id="location"
-          value={location}
-          onChange={handleLocationChange}
-          required
-        />
-      </div>
-      <div>
-        <label htmlFor="imageUrl">Image URL:</label>
-        <input
-          type="text"
-          id="imageUrl"
-          value={imageUrl}
-          onChange={handleImageUrlChange}
-          required
-        />
-      </div>
-            </div>
-     
-      <div className='des'>
-        <label htmlFor="description">Description:</label>
-        <textarea
-          id="description"
-          value={description}
-          onChange={handleDescriptionChange}
-          required
-        />
-      </div>
-      <div><h3>{log}</h3></div>
-      <button type="submit">Submit</button>
-    </form>
         
+        <Header/>
+        
+        <div className='admin-body'>
+        <h1>Welcome to admin pagee</h1>
+        <h3>Efficiency. Innovation. Excellence</h3>
+        <p>These three pillars form the foundation of our approach to administration. We believe that by prioritizing efficiency, we can optimize processes, minimize waste, and maximize productivity. Through innovation, we constantly seek new ideas, technologies, and strategies to drive continuous improvement and stay ahead of the curve. And above all, we strive for excellence in everything we do, setting high standards and delivering exceptional results. With efficiency, innovation, and excellence at the core of our administrative practices, we are dedicated to providing streamlined operations, creative solutions, and exceptional service. Join us on this journey as we transform the way administration is done, embracing the power of efficiency, embracing the possibilities of innovation, and striving for nothing less than excellence.</p>
+          <div className='admin-btn'>
+          
+        <div className='btn'>
+          <button > <Link to='/createScreen'>Create new</Link></button>
+       
+        </div>
+        <div className='btn'>
+          <button><Link to='/updateScreen'>update info</Link></button>
+        </div>
+        <div className='btn'>
+          <button><Link to='/delete'>
+          Delete info</Link></button>
+        </div> 
+          </div>
+            </div>
+            <Footer/>
     </div>
     
   );
