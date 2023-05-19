@@ -7,7 +7,7 @@ const Footer = () => {
             <div className='footer-btn'>
              <hr/>
               <div className='logo-btn'>
-                <img src={require('./logo_2.png')} />
+                <img src={require('./logo_2.png')} alt='logo' />
               </div>
             <div className='footer'>
             <section id="contact-us">
@@ -67,7 +67,7 @@ const Footer = () => {
             </div>
           
             <footer >
-  <p>&copy; 2023 Your Website. All rights reserved. | Designed by <a href="#">sannith</a></p>
+  <p>&copy; 2023 Your Website. All rights reserved. | Designed by <a href="/">sannith</a></p>
 </footer>
         </div>
     );
