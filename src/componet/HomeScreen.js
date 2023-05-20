@@ -26,7 +26,7 @@ const HomeScreen = () => {
         
     return (
         <div >
-            <Header/>
+            <Header />
             <div className='home-header'>
                 <h2 style={{color:'white'}}>WELCOME TO THE NEW WORLD,SEE THE UNSEEN PlACES</h2>
                <div className='hidden_btn'>

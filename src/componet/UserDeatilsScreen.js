@@ -6,10 +6,10 @@ import Footer from './Footer';
 import './CreateAccount.css'
 
 const UserDetailPage = () => {
-  const [user, setUser] = useState(null);
-  const  userEmail  = useParams();
+  const [user, setUser] = useState('');
+  const { userEmail}  = useParams();
   useEffect(() => {
-    axios.get(`https://testing1-1-f9743958.deta.app/getuserdata/${userEmail}`)
+    axios.get(` https://testing1-1-f9743958.deta.app/getuserdata/`,{ params: { email: userEmail } })
       .then(response => {
         setUser(response.data);
       })
@@ -17,11 +17,6 @@ const UserDetailPage = () => {
         console.log(error);
       });
   }, [userEmail]);
-
-  if (!user) {
-    return <div>Loading...</div>;
-  }
-
   return (
    <div>
     <Header/>

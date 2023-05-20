@@ -10,6 +10,7 @@ import DeleteScreen from './componet/Adminscreens/DeleteSreen.js';
 import Userlogin from './componet/Userlogin.js';
 import CreateAccountPage from './componet/CreateAccount.js';
 import UserDetailPage from './componet/UserDeatilsScreen.js';
+import ExploreAPP from './componet/EXPLORE/Explore.js';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = React.useState(false);
@@ -24,18 +25,20 @@ const App = () => {
   }
 
   return (
+    
     <Router>
     <Routes>
-      <Route  path="/" element={<HomeScreen/>}/>
+      <Route  path="/" element={<HomeScreen   isFirstTimeLogin={true}/>}/>
       <Route path="/login" element={isLoggedIn ? <Navigate to="/admin" /> : <LoginScreen onLoginSuccess={handleLoginSuccess} />} />
       <Route path="/admin" element={isLoggedIn ? <AdminScreen /> : <Navigate to="/" />} />
       <Route  path="/createScreen" element={<CreateScreen/>}/>
       <Route  path="/updateScreen" element={<UpdateScreen/>}/>
       <Route  path="/DeleteScreen" element={<DeleteScreen/>}/>
-      <Route  path="/UserDetails/:userEmail" element={<UserDetailPage/>}/>
+      <Route  path="/UserDetails" element={<UserDetailPage/>}/>
       <Route path="/CreateAccount" element={isUserLoggedIn ? <Navigate to="/UserDetails" /> : <CreateAccountPage onLoginSuccess={handleUserLogin} />} />
       <Route path="/Userlogin" element={isUserLoggedIn ? <Navigate to="/UserDetails" /> : <Userlogin onLoginSuccess={handleUserLogin} />} />
-      
+      <Route  path="/Explore" element={<ExploreAPP/>}/>
+
     </Routes>
   </Router>
   );

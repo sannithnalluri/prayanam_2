@@ -3,8 +3,8 @@ import { useState } from 'react';
 import axios from 'axios';
 import './Loginpage.css';
 import './HomeScreen.css'
-import { Link } from 'react-router-dom';
 import Footer from './Footer';
+import Header from './Header';
 const Loginpage = ({onLoginSuccess}) => {
 
     
@@ -45,23 +45,9 @@ const [email, setEmail] = useState('');
     return (
     <div>
       <div className="login-form">
-             <div className='webname'>
-                <div className='header'>
-               <img src={require('./logo.png')} alt='logo-img'/>
-                </div>
-                <div className='Nav-main'>
-                <ul>
-                    <li style={{color:'black'}}><Link to='/'>Home</Link></li>
-                    <li><Link to='/'>Explore</Link></li>
-                    <li><Link to='/'>Weather</Link></li>
-                    <li><Link to='/login'>Login</Link></li>
-
-                </ul>
-                </div>
-           
-            </div>
+            <Header/>
             <div className='login-text'>
-            <h1 >Login</h1>
+            <h1 > AdminLogin</h1>
             </div>
        
         <form  className='form' onSubmit={handleLogin}>
