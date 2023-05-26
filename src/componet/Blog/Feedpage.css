@@ -1,0 +1,29 @@
+.image-container2{
+align-items: center;
+justify-content: center;
+margin-left: 30%;
+}
+.place-card{
+    width: 40%;
+}
+
+@media (max-width:400px) {
+    .image-container2{
+        margin-left: 1px;
+        padding-top: 60px;
+    }
+    .place-card{
+        width:90% ;
+    }
+    
+}
+@media (max-width:500px) {
+    .image-container2{
+        margin-left: 10px;
+        padding-top: 60px;
+    }
+    .place-card{
+        width:90% ;
+    }
+    
+}

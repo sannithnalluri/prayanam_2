@@ -5,18 +5,19 @@ import Header from './Header';
 import Footer from './Footer';
 import './CreateAccount.css'
 
-const UserDetailPage = () => {
+const UserDetailPage = ({userEmail}) => {
   const [user, setUser] = useState('');
-  const { userEmail}  = useParams();
+  
   useEffect(() => {
-    axios.get(` https://testing1-1-f9743958.deta.app/getuserdata/`,{ params: { email: userEmail } })
+    console.log(userEmail)
+    axios.get(`http://127.0.0.1:8000/getuserdata/${userEmail}`)
       .then(response => {
         setUser(response.data);
       })
       .catch(error => {
         console.log(error);
       });
-  }, [userEmail]);
+  }, []);
   return (
    <div>
     <Header/>

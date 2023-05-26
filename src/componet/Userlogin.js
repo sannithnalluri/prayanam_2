@@ -7,9 +7,7 @@ import { Link } from 'react-router-dom';
 import Footer from './Footer';
 import {  useNavigate} from 'react-router-dom';
 import Header from './Header';
-const Loginpage = ({onLoginSuccess,}) => {
-
-    
+const Loginpage = ({userdata,login}) => {    
 const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [log, setlog] = useState('');
@@ -23,28 +21,17 @@ const [email, setEmail] = useState('');
         email,
         password,
       });
-  
-      console.log('Login successful:', response.data);
-      navigate(`/UserDetails`);
-      
+      userdata(email)
+     console.log('Login successful:', response.data);      
       if(response.data.vaild === 1){
-        onLoginSuccess()
-
-       
-      }
+          login()
+        
+}
       setlog(response.data.status)
-
-      
-      // Add your logic for handling the successful login response
     } catch (error) {
-      console.error('Error during login:', error);
-      // Add your error handling logic here
+      console.error('Error during login:', error); 
     }
-   
     }
-  
-  
-
     return (
     <div>
       <div className="login-form">
