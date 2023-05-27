@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useParams } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import './CreateAccount.css'
@@ -17,7 +16,7 @@ const UserDetailPage = ({userEmail}) => {
       .catch(error => {
         console.log(error);
       });
-  }, []);
+  }, [userEmail]);
   return (
    <div>
     <Header/>

@@ -5,14 +5,12 @@ import './Loginpage.css';
 import './HomeScreen.css'
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
-import {  useNavigate} from 'react-router-dom';
 import Header from './Header';
+
 const Loginpage = ({userdata,login}) => {    
 const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [log, setlog] = useState('');
-
-  const navigate = useNavigate()
   const handleLogin = async (e) => {
     e.preventDefault();
     
